@@ -4,7 +4,7 @@ use \think\Route;
 // ':action/blog/:id' => 'index/blog/:action'
 // // 变量传入index模块的控制器和操作方法
 // ':c/:a'=> 'index/:c/:a'
-//Route::miss('blog/miss'); //不存在时执行
+//Route::miss('blog/miss'); //不存在时执行  
 $url_list=db('background_menu')->where('is_enabled',1)->field('id,pid,action_name,route_url')->select();
 if ($url_list){
     //Route::rule(‘路由表达式’,‘路由地址’,‘请求类型’,‘路由参数（数组）’,‘变量规则（数组）’);
