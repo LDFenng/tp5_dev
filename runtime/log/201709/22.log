@@ -1,0 +1,462 @@
+---------------------------------------------------------------
+[ 2017-09-22T17:13:20+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/639.ldf
+[ info ] localhost/tp5_demo/admin.php/639.ldf [运行时间：0.998826s][吞吐率：1.00req/s] [内存消耗：3,988.83kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'cleanCache',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5_demo/admin.php/Test/bbb.ldf',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5362362368; PHPSESSID=c32a64f868e83f223248bfb7f1d49d7f',
+)
+[ info ] [ PARAM ] array (
+  'md' => NULL,
+)
+[ info ] [ RUN ] app\admin\controller\Sys->cleanCache[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.172000s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.080624s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`partner_id`,`app_id`,`ali_public_key`,`rsa_private_key`,`limit_pay`,`sort`,`is_enabled`,`create_time`,`update_time` FROM `wj_alipay_config` WHERE  `is_enabled` = 1  AND `admin_id` = 10000 [ RunTime:0.085724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.077869s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`branch_no`,`merchant_no`,`mer_key`,`cmb_pub_key`,`op_pwd`,`limit_pay`,`return_url`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_cmb_config` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.079984s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.090347s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`app_id`,`app_secret`,`wechat_type`,`merchant_id`,`key`,`cert_path`,`key_path`,`token`,`aes_key`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_wechat_info` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.077498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.093088s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.136108s ]
+[ error ] [2]Invalid argument supplied for foreach()[D:\wamp64\www\tp5_demo\app\common.php:796]
+---------------------------------------------------------------
+[ 2017-09-22T17:13:25+08:00 ] ::1 ::1 POST /tp5_demo/admin.php/Test/bbb.ldf
+[ info ] localhost/tp5_demo/admin.php/Test/bbb.ldf [运行时间：1.636993s][吞吐率：0.61req/s] [内存消耗：4,481.05kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Test',
+    2 => 'bbb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '21',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'text/html, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax' => 'true',
+  'x-pjax-container' => '#ajax_content',
+  'referer' => 'http://localhost/tp5_demo/admin.php/Test/bbb.ldf',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5362362368; PHPSESSID=c32a64f868e83f223248bfb7f1d49d7f',
+)
+[ info ] [ PARAM ] array (
+  '_pjax' => '#ajax_content',
+)
+[ info ] [ RUN ] app\admin\controller\Test->bbb[ D:\wamp64\www\tp5_demo\app\admin\controller\Test.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\test\bbb.html [ array (
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+  3 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110302s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.074235s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`partner_id`,`app_id`,`ali_public_key`,`rsa_private_key`,`limit_pay`,`sort`,`is_enabled`,`create_time`,`update_time` FROM `wj_alipay_config` WHERE  `is_enabled` = 1  AND `admin_id` = 10000 [ RunTime:0.074158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.068959s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`branch_no`,`merchant_no`,`mer_key`,`cmb_pub_key`,`op_pwd`,`limit_pay`,`return_url`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_cmb_config` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.067019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.076913s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`app_id`,`app_secret`,`wechat_type`,`merchant_id`,`key`,`cert_path`,`key_path`,`token`,`aes_key`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_wechat_info` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.065154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.069098s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.072832s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.072377s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`host`,`logo`,`icp`,`count`,`copyright`,`company_name`,`company_address`,`map_lat`,`map_lng`,`tel`,`email`,`qq`,`wechat_qcode`,`title`,`seo_keywords`,`seo_description`,`create_time`,`update_time` FROM `wj_site_info` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.067666s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_admin_auth` [ RunTime:0.099229s ]
+[ sql ] [ SQL ] SELECT * FROM `wj_admin_auth` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.080472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_auth_group` [ RunTime:0.090313s ]
+[ sql ] [ SQL ] SELECT * FROM `wj_auth_group` WHERE  `id` IN (1,2,10,5,6,3,4,7,8,9,11,12)  AND `is_enabled` = 1 [ RunTime:0.070672s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`action_name`,`route_url`,`icon`,`levle`,`sort`,`module`,`is_enabled`,`is_display`,`create_time`,`update_time` FROM `wj_background_menu` WHERE  `id` IN (1,2,12,15,52,53,54,64,66,13,14,60,61,62,63,28,29,55,56,57,58,59,65,214,215,219,216,217,218,97,98,99,100,101,102,103,104,105,106,107,108,109,110,112,111,113,114,6,8,30,208,209,210,31,220,221,222,223,224,225,226,227,228,229,230,11,38,39,40,41,48,16,17,19,20,21,22,43,45,18,23,24,25,26,27,44,212,46,132,133,195,211,231,232,233,234,235,236,237,238,239,240,241,242,246,247,248,249,250,170,171,172,173,198,174,175,176,197,199,200,201,177,178,179,180,181,182,183,184,185,186,187,188,202,203,204,205,206,49,50,51,72,73,74,75,76,77,78,79,80,81,94,95,96,83,84,91,92,93,85,86,87,88,89,90,134,135,136,137,138,139,161,141,142,143,144,145,146,147,148,149,150,151,152,153,162,168,164,163,165,166,167,47,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,189,190,191,192,193,194)  AND `is_enabled` = 1 ORDER BY sort asc [ RunTime:0.073249s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.063915s ]
+---------------------------------------------------------------
+[ 2017-09-22T17:13:38+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/Test/bbb.ldf
+[ info ] localhost/tp5_demo/admin.php/Test/bbb.ldf [运行时间：1.327864s][吞吐率：0.75req/s] [内存消耗：4,077.08kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Test',
+    2 => 'bbb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5362362368; PHPSESSID=c32a64f868e83f223248bfb7f1d49d7f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Test->bbb[ D:\wamp64\www\tp5_demo\app\admin\controller\Test.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\test\bbb.html [ array (
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+  3 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119541s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.203092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.395228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.076818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.086038s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.127088s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.078604s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.073656s ]
+---------------------------------------------------------------
+[ 2017-09-22T17:14:08+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/Test/bbb.ldf
+[ info ] localhost/tp5_demo/admin.php/Test/bbb.ldf [运行时间：0.498844s][吞吐率：2.00req/s] [内存消耗：3,176.63kb] [文件加载：56]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Test',
+    2 => 'bbb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5362362368; PHPSESSID=c32a64f868e83f223248bfb7f1d49d7f',
+  'if-modified-since' => 'Fri, 22 Sep 2017 09:13:37 GMT',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093587s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.084647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.070420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.063359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.065858s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.066325s ]
+---------------------------------------------------------------
+[ 2017-09-22T17:14:13+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/Test/bbb.ldf
+[ info ] localhost/tp5_demo/admin.php/Test/bbb.ldf [运行时间：0.780881s][吞吐率：1.28req/s] [内存消耗：4,394.88kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Test',
+    2 => 'bbb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5362362368; PHPSESSID=c32a64f868e83f223248bfb7f1d49d7f',
+  'if-modified-since' => 'Fri, 22 Sep 2017 09:13:37 GMT',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Test->bbb[ D:\wamp64\www\tp5_demo\app\admin\controller\Test.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\test\bbb.html [ array (
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+  3 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107826s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.078162s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.062241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.071053s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.084889s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.060616s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.066317s ]
+---------------------------------------------------------------
+[ 2017-09-22T17:15:17+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/Test/bbb.ldf
+[ info ] localhost/tp5_demo/admin.php/Test/bbb.ldf [运行时间：0.879012s][吞吐率：1.14req/s] [内存消耗：4,394.85kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Test',
+    2 => 'bbb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5362362368; PHPSESSID=c32a64f868e83f223248bfb7f1d49d7f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Test->bbb[ D:\wamp64\www\tp5_demo\app\admin\controller\Test.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\test\bbb.html [ array (
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+  3 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101638s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.073583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.076318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.076494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.073046s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.073348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.100561s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.094348s ]
+---------------------------------------------------------------
+[ 2017-09-22T17:19:19+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/Test/bbb.ldf
+[ info ] localhost/tp5_demo/admin.php/Test/bbb.ldf [运行时间：0.703761s][吞吐率：1.42req/s] [内存消耗：4,077.15kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Test',
+    2 => 'bbb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=5362362368; PHPSESSID=c32a64f868e83f223248bfb7f1d49d7f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Test->bbb[ D:\wamp64\www\tp5_demo\app\admin\controller\Test.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\test\bbb.html [ array (
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'base_info',
+  1 => 'header_info',
+  2 => 'menu_list',
+  3 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102387s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.061831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.065516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.066397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.064120s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.074964s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.064982s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.058130s ]

@@ -1,0 +1,122 @@
+{extend name="public/base" /}
+{block name="content"}
+	<!-- Heading Row -->
+	<div class="row">
+		<div class="col-lg-3">
+		
+		</div>
+        <div class="col-lg-6">
+		    <div class="swiper-container" id="top_slide" style="height:350px">
+		        <div class="swiper-wrapper">
+					<!-- 无动画 -->
+		            <div class="swiper-slide">
+		            <img class="rounded img-fluid" style="width:100%" src="http://placehold.it/900x350"/>
+		            </div>   
+		            <div class="swiper-slide">
+		            <img class="rounded img-fluid" style="width:100%" src="http://placehold.it/900x350"/>
+		            </div> 
+		            <div class="swiper-slide">
+		            <img class="rounded img-fluid" style="width:100%" src="http://placehold.it/900x350"/>
+		            </div> 		            		                 		        	
+		        </div>	        
+		    </div>            
+        </div>
+        <div class="col-lg-3">
+		    <div class="swiper-container" id="slide_1" style="height:350px">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide">
+		            <img class="rounded img-fluid" style="width:100%;height:300px" src="http://placehold.it/900x350"/>
+		            </div>   
+		            <div class="swiper-slide">
+		            <img class="rounded img-fluid" style="width:100%;height:300px" src="http://placehold.it/900x350"/>
+		            </div> 
+		            <div class="swiper-slide">
+		            <img class="rounded img-fluid" style="width:100%;height:300px" src="http://placehold.it/900x350"/>
+		            </div> 		            		                 		        	
+		        </div>	        
+		    </div> 		
+		</div>
+	</div>  
+	
+    <div class="row">
+	  <div class="col-lg-3">
+	  
+	  </div> 
+	  <div class="col-lg-9 row">
+	      <div class="col-lg-3 col-md-6 mb-4">
+	        <div class="card h-100">
+	          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+	          <div class="card-body">
+	            <h4 class="card-title">
+	              <a href="#">Item One</a>
+	            </h4>
+	            <h5>$24.99</h5>
+	            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+	          </div>
+	          <div class="card-footer">
+	            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-3 col-md-6 mb-4">
+	        <div class="card h-100">
+	          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+	          <div class="card-body">
+	            <h4 class="card-title">
+	              <a href="#">Item Two</a>
+	            </h4>
+	            <h5>$24.99</h5>
+	            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+	          </div>
+	          <div class="card-footer">
+	            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+	          </div>
+	        </div>
+	      </div>
+	
+	      <div class="col-lg-3 col-md-6 mb-4">
+	        <div class="card h-100">
+	          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+	          <div class="card-body">
+	            <h4 class="card-title">
+	              <a href="#">Item Three</a>
+	            </h4>
+	            <h5>$24.99</h5>
+	            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+	          </div>
+	          <div class="card-footer">
+	            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+	          </div>
+	        </div>
+	      </div>
+
+	      <div class="col-lg-3 col-md-6 mb-4">
+	        <div class="card h-100">
+	          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+	          <div class="card-body">
+	            <h4 class="card-title">
+	              <a href="#">Item Three</a>
+	            </h4>
+	            <h5>$24.99</h5>
+	            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+	          </div>
+	          <div class="card-footer">
+	            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+	          </div>
+	        </div>
+	      </div>	      	  
+	  </div> 
+    </div>
+	<link rel="stylesheet" href="__PUBLIC_PC__/ace/components/Swiper-3.4.1/css/swiper.min.css" />
+	<link rel="stylesheet" href="__PUBLIC_PC__/ace/components/Swiper-3.4.1/css/animate.min.css" />
+	<script type="text/javascript">
+	$(function(){
+		var scripts=[
+			"__PUBLIC_PC__/ace/components/Swiper-3.4.1/js/swiper.min.js",
+			"__PUBLIC_PC__/ace/components/Swiper-3.4.1/js/swiper.animate1.0.2.min.js",
+			"__PUBLIC_PC__/home/js/shop/index.js"
+		];
+		$.addScript(scripts);
+	})
+	</script>	   
+{/block}      

@@ -1,0 +1,90 @@
+{extend name="public/base" /}
+{block name="add-css"}
+<link rel="stylesheet" href="__PUBLIC__/css/mui.picker.min.css">
+{/block}
+{block name="header"}{:widget('NavBar/header')}{/block}
+{block name="main-content"}
+<div class="mui-content" style="margin-top:4rem">
+<form class="mui-input-group">
+	<input type="hidden" value="{$Request.param.school_id}" class="get-value" name="school_id" />
+	<input type="hidden" value="{$Request.param.uid}" class="get-value" name="uid" />
+    <div class="mui-input-row">
+        <label>到访校区</label>
+		<input class="mui-input-clear" placeholder="到访校区" readonly disabled value="{$school_info.name}" data-input-clear="5" type="text">
+    </div>   
+    <div class="mui-input-row">
+        <label>姓名</label>
+		<input class="mui-input-clear get-value" placeholder="学员姓名" id="name" name="name" data-input-clear="5" type="text">
+		<span class="mui-icon mui-icon-clear mui-hidden"></span>
+    </div>
+    <div class="mui-input-row">
+        <label>手机号码</label>
+		<input class="mui-input-clear get-value" placeholder="手机号码" maxlength="11" id="phone" name="phone" data-input-clear="5" type="tel" onkeyup="value=value.replace(/[^\d]/g,'')">
+		<span class="mui-icon mui-icon-clear mui-hidden"></span>
+    </div> 
+     <div class="mui-input-row">
+        <label>咨询项目</label>
+			<select class="get-value" name="project_ids">
+			{volist name="project_data" id="project_info"}
+			<option value="{$project_info.value}">{$project_info.text}</option>
+			{/volist}												
+			</select>
+		<span class="mui-icon mui-icon-clear mui-hidden"></span>
+    </div>         
+	<button class="mui-btn mui-btn-primary mui-btn-block" id="save_data" type="button">保存</button>  
+</form>
+</div>
+{/block}
+{block name="footer"}{//:widget('NavBar/footer')}{/block} 
+{block name="scripts"}
+<script src="__PUBLIC__/js/mui.picker.min.js"></script>
+<script>
+	(function($, doc) {
+		$.init();
+		mui('.mui-input-row input').input();
+		var btn = document.getElementById("save_data");
+		//监听点击事件
+		btn.addEventListener("tap",function () {
+			var check = true;
+			mui(".mui-input-row input").each(function() {
+				//若当前input为空，则alert提醒 
+				//console.log(h(this).val());
+				if(!this.value || this.value.trim() == "") {
+				    mui.alert("不允许为空");
+				    check = false;
+				    return false;
+				}
+			}); //校验通过，继续执行业务逻辑 
+			if(check){
+				var data_arr={};
+				mui(".get-value").each(function() {
+					data_arr[h(this).attr('name')] = h(this).val();
+				})
+				//console.log(data_arr);
+				mui.ajax("{:url('saveVisitor')}",{
+					data:data_arr,
+					dataType:'json',//服务器返回json格式数据
+					type:'post',//HTTP请求类型
+					//timeout:10000,//超时时间设置为10秒；
+					//headers:{'Content-Type':'application/json'},	              
+					success:function(data){
+						//服务器返回响应，根据响应结果，分析是否登录成功；
+						if(data.code==1){
+							mui.toast('成功登记');
+							mui.alert(data.msg);
+							setTimeout(function(){
+								window.location.reload(); 
+							},4000);
+						} 
+						else{
+							mui.toast(data.msg);
+							return;
+						}
+					},
+				});
+			}
+			
+		});
+	})(mui, document);
+</script>
+{/block}

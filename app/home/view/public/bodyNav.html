@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LDF资讯首页</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item {if condition="($Request.controller =='Index') AND ($Request.action =='index')"}active{/if}">
+          <a class="nav-link" href="{:url('home/Index/index')}">首页
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="nav-item {if condition="($Request.controller =='Shop') AND ($Request.action =='index')"}active{/if}">
+          <a class="nav-link" href="{:url('home/Shop/index')}">商城
+            <span class="sr-only"></span>
+          </a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="#">关于</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="http://www.yolaila.top/demo/admin.php">后台</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">登陆</a>
+        </li>       
+      </ul>
+		<form class="form-inline navbar-form pull-right">
+		  <input class="form-control" type="text" placeholder="Search">
+		  <button class="btn btn-success-outline" type="submit">Search</button>
+		</form>       
+    </div>
+  </div>
+</nav>

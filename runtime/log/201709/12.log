@@ -1,0 +1,2720 @@
+---------------------------------------------------------------
+[ 2017-09-12T22:47:22+08:00 ] ::1 ::1 GET /tp5_demo/admin.php
+[ info ] localhost/tp5_demo/admin.php [运行时间：10.739055s][吞吐率：0.09req/s] [内存消耗：3,885.91kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'pgv_pvi=2848518144',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\login\login1.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.090557s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:1.337337s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`partner_id`,`app_id`,`ali_public_key`,`rsa_private_key`,`limit_pay`,`sort`,`is_enabled`,`create_time`,`update_time` FROM `wj_alipay_config` WHERE  `is_enabled` = 1  AND `admin_id` IS NULL [ RunTime:0.770507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.219071s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`branch_no`,`merchant_no`,`mer_key`,`cmb_pub_key`,`op_pwd`,`limit_pay`,`return_url`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_cmb_config` WHERE  `admin_id` IS NULL  AND `is_enabled` = 1 [ RunTime:0.570549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:1.863770s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`app_id`,`app_secret`,`wechat_type`,`merchant_id`,`key`,`cert_path`,`key_path`,`token`,`aes_key`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_wechat_info` WHERE  `admin_id` IS NULL  AND `is_enabled` = 1 [ RunTime:1.220286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:1.448832s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:1.477796s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:47:25+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/v.ldf
+[ info ] localhost/tp5_demo/admin.php/v.ldf [运行时间：2.847257s][吞吐率：0.35req/s] [内存消耗：3,571.45kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/tp5_demo/admin.php',
+  'cookie' => 'pgv_pvi=2848518144; PHPSESSID=a039b22e16bce2b3d3353ae2c67dc927',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.279207s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.508726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.361799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.350205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.674910s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.447666s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:47:26+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/geetest.ldf?t=1505227642933
+[ info ] localhost/tp5_demo/admin.php/geetest.ldf?t=1505227642933 [运行时间：3.280579s][吞吐率：0.30req/s] [内存消耗：3,177.98kb] [文件加载：57]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\geetest\\GeetestController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5_demo/admin.php',
+  'cookie' => 'pgv_pvi=2848518144; PHPSESSID=a039b22e16bce2b3d3353ae2c67dc927',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  't' => '1505227642933',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\geetest\GeetestController->index[ D:\wamp64\www\tp5_demo\vendor\yfcmf\geetest\src\GeetestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121709s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.079574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.079016s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.082586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.079487s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.080702s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:48:12+08:00 ] ::1 ::1 POST /tp5_demo/admin.php/Login/CheckLogin.ldf
+[ info ] localhost/tp5_demo/admin.php/Login/CheckLogin.ldf [运行时间：0.905068s][吞吐率：1.10req/s] [内存消耗：3,612.05kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'CheckLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5_demo/admin.php',
+  'content-length' => '44',
+  'cookie' => 'pgv_pvi=2848518144; PHPSESSID=a039b22e16bce2b3d3353ae2c67dc927',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => ' LDF',
+  'password' => 'lin108219',
+  'verify' => 'chh',
+)
+[ info ] [ RUN ] app\admin\controller\Login->CheckLogin[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110652s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.077440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.079208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.076887s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.075669s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.079060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_admin_info` [ RunTime:0.077065s ]
+[ sql ] [ SQL ] SELECT * FROM `wj_admin_info` WHERE  `user_name` = 'LDF' LIMIT 1 [ RunTime:0.073316s ]
+[ sql ] [ SQL ] UPDATE `wj_admin_info`  SET `id`=10000,`last_login_time`='1505227692',`login_ip`='0.0.0.0',`update_time`='1505227692',`login_times`=443  WHERE  `id` = 10000 [ RunTime:0.075359s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:48:14+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/040.ldf
+[ info ] localhost/tp5_demo/admin.php/040.ldf [运行时间：2.346232s][吞吐率：0.43req/s] [内存消耗：4,492.30kb] [文件加载：79]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/tp5_demo/admin.php',
+  'cookie' => 'pgv_pvi=2848518144; PHPSESSID=a039b22e16bce2b3d3353ae2c67dc927',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'md' => NULL,
+)
+[ info ] [ RUN ] app\admin\controller\index->index[ D:\wamp64\www\tp5_demo\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\index\index.html [ array (
+  0 => 'slide_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'slide_list',
+  1 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'slide_list',
+  1 => 'base_info',
+  2 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'slide_list',
+  1 => 'base_info',
+  2 => 'header_info',
+  3 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'slide_list',
+  1 => 'base_info',
+  2 => 'header_info',
+  3 => 'menu_list',
+  4 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116736s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.088801s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`partner_id`,`app_id`,`ali_public_key`,`rsa_private_key`,`limit_pay`,`sort`,`is_enabled`,`create_time`,`update_time` FROM `wj_alipay_config` WHERE  `is_enabled` = 1  AND `admin_id` = 10000 [ RunTime:0.067146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.068410s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`branch_no`,`merchant_no`,`mer_key`,`cmb_pub_key`,`op_pwd`,`limit_pay`,`return_url`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_cmb_config` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.066362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.068522s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`app_id`,`app_secret`,`wechat_type`,`merchant_id`,`key`,`cert_path`,`key_path`,`token`,`aes_key`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_wechat_info` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.065666s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.069310s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.075946s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.069328s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 ORDER BY sort asc [ RunTime:0.066170s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_slide` [ RunTime:0.069620s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`is_animate`,`img_url`,`url`,`animate_data`,`is_enabled`,`scene`,`type`,`sort`,`create_time`,`update_time` FROM `wj_slide` WHERE  `admin_id` = 10000  AND `is_enabled` = 1  AND `scene` = 1 ORDER BY sort asc [ RunTime:0.067502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.071152s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`host`,`logo`,`icp`,`count`,`copyright`,`company_name`,`company_address`,`map_lat`,`map_lng`,`tel`,`email`,`qq`,`wechat_qcode`,`title`,`seo_keywords`,`seo_description`,`create_time`,`update_time` FROM `wj_site_info` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.070815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_admin_auth` [ RunTime:0.071083s ]
+[ sql ] [ SQL ] SELECT * FROM `wj_admin_auth` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.066947s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_auth_group` [ RunTime:0.070244s ]
+[ sql ] [ SQL ] SELECT * FROM `wj_auth_group` WHERE  `id` IN (1,2,10,5,6,3,4,7,8,9,11,12)  AND `is_enabled` = 1 [ RunTime:0.066700s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`action_name`,`route_url`,`icon`,`levle`,`sort`,`module`,`is_enabled`,`is_display`,`create_time`,`update_time` FROM `wj_background_menu` WHERE  `id` IN (1,2,12,15,52,53,54,64,66,13,14,60,61,62,63,28,29,55,56,57,58,59,65,214,215,219,216,217,218,97,98,99,100,101,102,103,104,105,106,107,108,109,110,112,111,113,114,6,8,30,208,209,210,31,220,221,222,223,224,225,226,227,228,229,230,11,38,39,40,41,48,16,17,19,20,21,22,43,45,18,23,24,25,26,27,44,212,46,132,133,195,211,231,232,233,234,235,236,237,238,239,240,241,242,170,171,172,173,198,174,175,176,197,199,200,201,177,178,179,180,181,182,183,184,185,186,187,188,202,203,204,205,206,49,50,51,72,73,74,75,76,77,78,79,80,81,94,95,96,83,84,91,92,93,85,86,87,88,89,90,134,135,136,137,138,139,161,141,142,143,144,145,146,147,148,149,150,151,152,153,162,168,164,163,165,166,167,47,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,189,190,191,192,193,194)  AND `is_enabled` = 1 ORDER BY sort asc [ RunTime:0.072727s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.064442s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:48:23+08:00 ] ::1 ::1 POST /tp5_demo/admin.php/6202/237.ldf
+[ info ] localhost/tp5_demo/admin.php/6202/237.ldf [运行时间：1.081792s][吞吐率：0.92req/s] [内存消耗：4,767.85kb] [文件加载：81]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'emailList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-pjax' => 'true',
+  'x-pjax-container' => '#ajax_content',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5_demo/admin.php/040.ldf',
+  'content-length' => '21',
+  'cookie' => 'pgv_pvi=2848518144; PHPSESSID=a039b22e16bce2b3d3353ae2c67dc927',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '_pjax' => '#ajax_content',
+  'md' => '237',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->emailList[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\sys\emailList.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+  4 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+  4 => 'menu_list',
+  5 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098282s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.069460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.068856s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.069445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.068584s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.068974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.069639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wj_email_config` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.066360s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `admin_id` = 10000 ORDER BY sort asc LIMIT 0,10 [ RunTime:0.065710s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.072111s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` = 237 LIMIT 1 [ RunTime:0.065240s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:48:48+08:00 ] ::1 ::1 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] localhost/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：1.698871s][吞吐率：0.59req/s] [内存消耗：4,611.47kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '103',
+  'cookie' => 'pgv_pvi=2848518144; PHPSESSID=a039b22e16bce2b3d3353ae2c67dc927',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => '林冬锋',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'fsgfsdas',
+  'content' => '14242qeafdasd',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102834s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.073550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.075303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.075674s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070595s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.070992s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.070384s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:49:56+08:00 ] ::1 ::1 GET /tp5_demo/admin.php/6202/237.ldf
+[ info ] localhost/tp5_demo/admin.php/6202/237.ldf [运行时间：0.572610s][吞吐率：1.75req/s] [内存消耗：3,964.92kb] [文件加载：66]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'emailList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'pgv_pvi=2848518144; PHPSESSID=a039b22e16bce2b3d3353ae2c67dc927',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'md' => '237',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->emailList[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104865s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.072431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.069595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.072886s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.070762s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:53:23+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/6202/237.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/6202/237.ldf [运行时间：10.559466s][吞吐率：0.09req/s] [内存消耗：4,214.97kb] [文件加载：73]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'emailList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'md' => '237',
+)
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:5.146989s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.937172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:3.915045s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.149181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.071425s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.105615s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:53:27+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/l.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/l.ldf [运行时间：0.781176s][吞吐率：1.28req/s] [内存消耗：3,592.91kb] [文件加载：68]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\login\login1.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098265s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.069208s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`partner_id`,`app_id`,`ali_public_key`,`rsa_private_key`,`limit_pay`,`sort`,`is_enabled`,`create_time`,`update_time` FROM `wj_alipay_config` WHERE  `is_enabled` = 1  AND `admin_id` IS NULL [ RunTime:0.065831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.074892s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`branch_no`,`merchant_no`,`mer_key`,`cmb_pub_key`,`op_pwd`,`limit_pay`,`return_url`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_cmb_config` WHERE  `admin_id` IS NULL  AND `is_enabled` = 1 [ RunTime:0.065413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.073770s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`app_id`,`app_secret`,`wechat_type`,`merchant_id`,`key`,`cert_path`,`key_path`,`token`,`aes_key`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_wechat_info` WHERE  `admin_id` IS NULL  AND `is_enabled` = 1 [ RunTime:0.066449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.068989s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.069044s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:53:28+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf [运行时间：0.668282s][吞吐率：1.50req/s] [内存消耗：3,571.39kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114495s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.077981s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.078046s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.077670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.078612s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.078270s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:53:28+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/geetest.ldf?t=1505228007924
+[ info ] 192.168.1.241/tp5_demo/admin.php/geetest.ldf?t=1505228007924 [运行时间：1.013693s][吞吐率：0.99req/s] [内存消耗：3,177.73kb] [文件加载：57]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\geetest\\GeetestController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  't' => '1505228007924',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\geetest\GeetestController->index[ D:\wamp64\www\tp5_demo\vendor\yfcmf\geetest\src\GeetestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101269s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.070645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.070425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070437s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.069073s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:53:46+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Login/CheckLogin.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/Login/CheckLogin.ldf [运行时间：2.692041s][吞吐率：0.37req/s] [内存消耗：3,606.16kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'CheckLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'content-length' => '43',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'LDF',
+  'password' => 'lin108219',
+  'verify' => 'jev',
+)
+[ info ] [ RUN ] app\admin\controller\Login->CheckLogin[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:2.233496s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.079283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.079870s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.079191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.078821s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.077639s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:53:47+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf?0.7329448859709944
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf?0.7329448859709944 [运行时间：0.539064s][吞吐率：1.86req/s] [内存消耗：3,572.49kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '0_7329448859709944' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100471s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.073624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071800s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.076745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070992s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.068978s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:53:52+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Login/CheckLogin.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/Login/CheckLogin.ldf [运行时间：0.607393s][吞吐率：1.65req/s] [内存消耗：3,606.16kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'CheckLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'content-length' => '43',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'LDF',
+  'password' => 'lin108219',
+  'verify' => 'iwc',
+)
+[ info ] [ RUN ] app\admin\controller\Login->CheckLogin[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113414s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.078648s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.080788s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.078514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.094007s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.076858s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:53:52+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf?0.22965405248642412
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf?0.22965405248642412 [运行时间：0.630576s][吞吐率：1.59req/s] [内存消耗：3,572.49kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '0_22965405248642412' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114753s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.079560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.079071s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.080221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.119020s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.078580s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:00+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Login/CheckLogin.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/Login/CheckLogin.ldf [运行时间：0.543480s][吞吐率：1.84req/s] [内存消耗：3,606.16kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'CheckLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'content-length' => '43',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'LDF',
+  'password' => 'lin108219',
+  'verify' => '7z6',
+)
+[ info ] [ RUN ] app\admin\controller\Login->CheckLogin[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098935s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.070124s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.069565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.068455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.071273s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.069080s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:05+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf?0.6526670620345091
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf?0.6526670620345091 [运行时间：4.955312s][吞吐率：0.20req/s] [内存消耗：3,572.49kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '0_6526670620345091' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.879343s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.582858s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.967278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:1.337352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.986487s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.110984s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:06+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf?0.21001555575480002
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf?0.21001555575480002 [运行时间：2.085823s][吞吐率：0.48req/s] [内存消耗：3,572.49kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '0_21001555575480002' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113403s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.078089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.077780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.077117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.077821s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.077512s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:06+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf?0.9167894357346845
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf?0.9167894357346845 [运行时间：0.647234s][吞吐率：1.55req/s] [内存消耗：3,572.49kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '0_9167894357346845' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099384s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.072242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.069527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.070308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.071358s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.072219s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:08+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf?0.8123839660017351
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf?0.8123839660017351 [运行时间：0.524155s][吞吐率：1.91req/s] [内存消耗：3,572.49kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '0_8123839660017351' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099771s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.070925s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.070149s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.071518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.073619s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.068882s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:15+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Login/CheckLogin.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/Login/CheckLogin.ldf [运行时间：1.312470s][吞吐率：0.76req/s] [内存消耗：3,606.16kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'CheckLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'content-length' => '43',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'LDF',
+  'password' => 'lin108219',
+  'verify' => 'dbs',
+)
+[ info ] [ RUN ] app\admin\controller\Login->CheckLogin[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.329294s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.091797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.473427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.157688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.081283s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.078201s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:16+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf?0.3090356567858248
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf?0.3090356567858248 [运行时间：0.582947s][吞吐率：1.72req/s] [内存消耗：3,572.49kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '0_3090356567858248' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112601s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.080051s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.078860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.077552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.077932s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.076601s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:26+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Login/CheckLogin.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/Login/CheckLogin.ldf [运行时间：0.796168s][吞吐率：1.26req/s] [内存消耗：3,612.74kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'CheckLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'content-length' => '43',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'LDF',
+  'password' => 'lin108219',
+  'verify' => 'lqn',
+)
+[ info ] [ RUN ] app\admin\controller\Login->CheckLogin[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101080s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.069404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.070609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.070608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.069133s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.070399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_admin_info` [ RunTime:0.069077s ]
+[ sql ] [ SQL ] SELECT * FROM `wj_admin_info` WHERE  `user_name` = 'LDF' LIMIT 1 [ RunTime:0.066829s ]
+[ sql ] [ SQL ] UPDATE `wj_admin_info`  SET `id`=10000,`last_login_time`='1505228065',`login_ip`='192.168.1.241',`update_time`='1505228065',`login_times`=444  WHERE  `id` = 10000 [ RunTime:0.065855s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:27+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/040.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/040.ldf [运行时间：1.806883s][吞吐率：0.55req/s] [内存消耗：4,103.84kb] [文件加载：76]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'md' => NULL,
+)
+[ info ] [ RUN ] app\admin\controller\index->index[ D:\wamp64\www\tp5_demo\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\index\index.html [ array (
+  0 => 'slide_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'slide_list',
+  1 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'slide_list',
+  1 => 'base_info',
+  2 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'slide_list',
+  1 => 'base_info',
+  2 => 'header_info',
+  3 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'slide_list',
+  1 => 'base_info',
+  2 => 'header_info',
+  3 => 'menu_list',
+  4 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099711s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.068803s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`partner_id`,`app_id`,`ali_public_key`,`rsa_private_key`,`limit_pay`,`sort`,`is_enabled`,`create_time`,`update_time` FROM `wj_alipay_config` WHERE  `is_enabled` = 1  AND `admin_id` = 10000 [ RunTime:0.066356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.069512s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`branch_no`,`merchant_no`,`mer_key`,`cmb_pub_key`,`op_pwd`,`limit_pay`,`return_url`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_cmb_config` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.067480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.071541s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`app_id`,`app_secret`,`wechat_type`,`merchant_id`,`key`,`cert_path`,`key_path`,`token`,`aes_key`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_wechat_info` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.088002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.067805s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.068228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.070253s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 ORDER BY sort asc [ RunTime:0.066204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_slide` [ RunTime:0.069511s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`is_animate`,`img_url`,`url`,`animate_data`,`is_enabled`,`scene`,`type`,`sort`,`create_time`,`update_time` FROM `wj_slide` WHERE  `admin_id` = 10000  AND `is_enabled` = 1  AND `scene` = 1 ORDER BY sort asc [ RunTime:0.066368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.072423s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`host`,`logo`,`icp`,`count`,`copyright`,`company_name`,`company_address`,`map_lat`,`map_lng`,`tel`,`email`,`qq`,`wechat_qcode`,`title`,`seo_keywords`,`seo_description`,`create_time`,`update_time` FROM `wj_site_info` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.066151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_admin_auth` [ RunTime:0.071055s ]
+[ sql ] [ SQL ] SELECT * FROM `wj_admin_auth` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.067205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_auth_group` [ RunTime:0.080999s ]
+[ sql ] [ SQL ] SELECT * FROM `wj_auth_group` WHERE  `id` IN (1,2,10,5,6,3,4,7,8,9,11,12)  AND `is_enabled` = 1 [ RunTime:0.071230s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`action_name`,`route_url`,`icon`,`levle`,`sort`,`module`,`is_enabled`,`is_display`,`create_time`,`update_time` FROM `wj_background_menu` WHERE  `id` IN (1,2,12,15,52,53,54,64,66,13,14,60,61,62,63,28,29,55,56,57,58,59,65,214,215,219,216,217,218,97,98,99,100,101,102,103,104,105,106,107,108,109,110,112,111,113,114,6,8,30,208,209,210,31,220,221,222,223,224,225,226,227,228,229,230,11,38,39,40,41,48,16,17,19,20,21,22,43,45,18,23,24,25,26,27,44,212,46,132,133,195,211,231,232,233,234,235,236,237,238,239,240,241,242,170,171,172,173,198,174,175,176,197,199,200,201,177,178,179,180,181,182,183,184,185,186,187,188,202,203,204,205,206,49,50,51,72,73,74,75,76,77,78,79,80,81,94,95,96,83,84,91,92,93,85,86,87,88,89,90,134,135,136,137,138,139,161,141,142,143,144,145,146,147,148,149,150,151,152,153,162,168,164,163,165,166,167,47,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,189,190,191,192,193,194)  AND `is_enabled` = 1 ORDER BY sort asc [ RunTime:0.071859s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.065649s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:43+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/6202/237.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/6202/237.ldf [运行时间：0.560619s][吞吐率：1.78req/s] [内存消耗：3,969.07kb] [文件加载：66]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'emailList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-pjax' => 'true',
+  'x-pjax-container' => '#ajax_content',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/040.ldf',
+  'content-length' => '21',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '_pjax' => '#ajax_content',
+  'md' => '237',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->emailList[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104008s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.071406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.072658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.071051s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.071169s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.070022s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:54:44+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/6202/237.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/6202/237.ldf [运行时间：0.767872s][吞吐率：1.30req/s] [内存消耗：3,965.45kb] [文件加载：66]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'emailList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/040.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'md' => '237',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->emailList[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.342826s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.069453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.069223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.072253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070695s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.067902s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:55:43+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/6202/237.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/6202/237.ldf [运行时间：1.010861s][吞吐率：0.99req/s] [内存消耗：4,486.81kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'emailList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/040.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'md' => '237',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->emailList[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\sys\emailList.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+  4 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+  4 => 'menu_list',
+  5 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100999s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.071207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.074116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.070953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.086715s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.071843s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.070035s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wj_email_config` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.066494s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `admin_id` = 10000 ORDER BY sort asc LIMIT 0,10 [ RunTime:0.069590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.070584s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` = 237 LIMIT 1 [ RunTime:0.066005s ]
+---------------------------------------------------------------
+[ 2017-09-12T22:56:24+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：0.676771s][吞吐率：1.48req/s] [内存消耗：4,611.48kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '111',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => 'wefd',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfghj',
+  'content' => '水电费回复',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110731s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.079029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.077878s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.077876s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.078165s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.075059s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.077484s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:03:20+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：11.050684s][吞吐率：0.09req/s] [内存消耗：4,136.16kb] [文件加载：76]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '111',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => 'wefd',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfghj',
+  'content' => '水电费回复',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:3.107758s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.745667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.575550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:6.098517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.111110s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.116708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.079797s ]
+[ error ] [64]Cannot redeclare geetest() (previously declared in D:\wamp64\www\tp5_demo\vendor\yfcmf\geetest\src\helper.php:10)[D:\wamp64\www\tp5_demo\vendor\yfcmf\geetest\src\helper.php:17]
+---------------------------------------------------------------
+[ 2017-09-12T23:04:46+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：3.240316s][吞吐率：0.31req/s] [内存消耗：4,469.64kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '111',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => 'wefd',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfghj',
+  'content' => '水电费回复',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:2.689918s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.079430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.076608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.078318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.076607s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.077402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.078274s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:05:08+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：0.685636s][吞吐率：1.46req/s] [内存消耗：4,609.20kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '111',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => 'wefd',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfghj',
+  'content' => '水电费回复',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109396s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.076401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.076841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.076158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.074671s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.075845s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.077634s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:09:58+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/237203.ldf?id=1&page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/237203.ldf?id=1&page_num=10 [运行时间：0.853319s][吞吐率：1.17req/s] [内存消耗：4,218.61kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'editEmail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'page_num' => '10',
+  'md' => NULL,
+)
+[ info ] [ RUN ] app\admin\controller\Sys->editEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\sys\editEmail.html [ array (
+  0 => 'email_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.140877s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.072578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.071270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.069880s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.086003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.145733s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `id` = 1  AND `admin_id` = 10000 LIMIT 1 [ RunTime:0.072034s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:11:18+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：8.921069s][吞吐率：0.11req/s] [内存消耗：4,609.20kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '111',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => 'wefd',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfghj',
+  'content' => '水电费回复',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:8.377525s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.088561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.072019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.074347s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.073697s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.071502s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:21:03+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/6202/237.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/6202/237.ldf [运行时间：1.002497s][吞吐率：1.00req/s] [内存消耗：4,491.19kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'emailList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/040.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'if-modified-since' => 'Tue, 12 Sep 2017 14:55:43 GMT',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'md' => '237',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->emailList[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\sys\emailList.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+  4 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+  4 => 'menu_list',
+  5 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101985s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.071418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071101s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.072271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.082239s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.068726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.071681s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wj_email_config` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.067567s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `admin_id` = 10000 ORDER BY sort asc LIMIT 0,10 [ RunTime:0.067697s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.071863s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` = 237 LIMIT 1 [ RunTime:0.065658s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:21:23+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：1.770883s][吞吐率：0.56req/s] [内存消耗：4,609.80kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '186',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => '林冬锋',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'csgsa按时发达',
+  'content' => '爱的故事做饭饭',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121434s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.081828s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.080303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.089301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.078805s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.081605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.081041s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:25:17+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/237203.ldf?id=1&page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/237203.ldf?id=1&page_num=10 [运行时间：1.077411s][吞吐率：0.93req/s] [内存消耗：3,994.98kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'editEmail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'if-modified-since' => 'Tue, 12 Sep 2017 15:09:58 GMT',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'page_num' => '10',
+  'md' => NULL,
+)
+[ info ] [ RUN ] app\admin\controller\Sys->editEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\sys\editEmail.html [ array (
+  0 => 'email_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112766s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.078721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.078232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.077789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.081551s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.083150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.081823s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `id` = 1  AND `admin_id` = 10000 LIMIT 1 [ RunTime:0.392623s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:26:26+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/238204.ldf?id=1&page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/238204.ldf?id=1&page_num=10 [运行时间：0.727981s][吞吐率：1.37req/s] [内存消耗：3,894.04kb] [文件加载：68]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'saveEmail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '151',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'page_num' => '10',
+  'name' => '林冬锋',
+  'email' => '18688072295@163.com',
+  'password' => 'lin108219feng',
+  'reply_mail' => '1931569630@qq.com',
+  'mail_port' => '25',
+  'host' => ' smtp.163.com',
+  'md' => NULL,
+)
+[ info ] [ RUN ] app\admin\controller\Sys->saveEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109373s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.078379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.078684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.078138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.081006s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.074788s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.077873s ]
+[ sql ] [ SQL ] UPDATE `wj_email_config`  SET `name`='林冬锋',`email`='18688072295@163.com',`password`='lin108219feng',`reply_mail`='1931569630@qq.com',`mail_port`=25,`host`=' smtp.163.com',`admin_id`=10000,`update_time`=1505229986  WHERE  `id` = 1 [ RunTime:0.074550s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:26:33+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/237203.ldf?id=1&page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/237203.ldf?id=1&page_num=10 [运行时间：0.722236s][吞吐率：1.38req/s] [内存消耗：3,994.98kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'editEmail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'if-modified-since' => 'Tue, 12 Sep 2017 15:25:17 GMT',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'page_num' => '10',
+  'md' => NULL,
+)
+[ info ] [ RUN ] app\admin\controller\Sys->editEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\sys\editEmail.html [ array (
+  0 => 'email_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111944s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.077130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.076535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.077957s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.078472s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.074030s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.077518s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `id` = 1  AND `admin_id` = 10000 LIMIT 1 [ RunTime:0.072866s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:26:38+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/6202/237.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/6202/237.ldf [运行时间：0.884451s][吞吐率：1.13req/s] [内存消耗：4,490.23kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'emailList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-pjax' => 'true',
+  'x-pjax-container' => '#ajax_content',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '21',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '_pjax' => '#ajax_content',
+  'md' => '237',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->emailList[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\sys\emailList.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->seo[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\seo.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->header[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\header.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->leftMenu[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\leftMenu.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+  4 => 'menu_list',
+) ]
+[ info ] [ RUN ] app\admin\widget\NavBar->footer[ D:\wamp64\www\tp5_demo\app\admin\widget\NavBar.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\public\footer.html [ array (
+  0 => 'page',
+  1 => 'email_list',
+  2 => 'base_info',
+  3 => 'header_info',
+  4 => 'menu_list',
+  5 => 'foot_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100024s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.072035s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.070178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.069981s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070413s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.069129s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.069122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wj_email_config` WHERE  `admin_id` = 10000 LIMIT 1 [ RunTime:0.066438s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `admin_id` = 10000 ORDER BY sort asc LIMIT 0,10 [ RunTime:0.069382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_site_info` [ RunTime:0.069683s ]
+[ sql ] [ SQL ] SELECT `pid`,`levle` FROM `wj_background_menu` WHERE  `id` = 237 LIMIT 1 [ RunTime:0.066507s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:26:41+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/237203.ldf?id=1&page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/237203.ldf?id=1&page_num=10 [运行时间：0.570467s][吞吐率：1.75req/s] [内存消耗：3,152.10kb] [文件加载：56]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'editEmail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'if-modified-since' => 'Tue, 12 Sep 2017 15:26:33 GMT',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'page_num' => '10',
+  'md' => NULL,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113221s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.079563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.079615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.081791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.077386s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.077781s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:27:04+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：0.978477s][吞吐率：1.02req/s] [内存消耗：4,609.20kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '107',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => '林冬锋132',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfhgf',
+  'content' => 'ADASFADADADAASD',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.162501s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.071640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.069773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.069953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070807s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.070912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.381571s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:30:10+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/639.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/639.ldf [运行时间：1.149654s][吞吐率：0.87req/s] [内存消耗：3,942.51kb] [文件加载：68]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'cleanCache',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'md' => NULL,
+)
+[ info ] [ RUN ] app\admin\controller\Sys->cleanCache[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109175s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.076793s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.076377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.077128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.331900s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.329148s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:30:14+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：1.227363s][吞吐率：0.81req/s] [内存消耗：4,619.88kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '107',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => '林冬锋132',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfhgf',
+  'content' => 'ADASFADADADAASD',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109124s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.077171s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`partner_id`,`app_id`,`ali_public_key`,`rsa_private_key`,`limit_pay`,`sort`,`is_enabled`,`create_time`,`update_time` FROM `wj_alipay_config` WHERE  `is_enabled` = 1  AND `admin_id` = 10000 [ RunTime:0.073920s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.076377s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`branch_no`,`merchant_no`,`mer_key`,`cmb_pub_key`,`op_pwd`,`limit_pay`,`return_url`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_cmb_config` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.072490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.075162s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`app_id`,`app_secret`,`wechat_type`,`merchant_id`,`key`,`cert_path`,`key_path`,`token`,`aes_key`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_wechat_info` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 [ RunTime:0.072427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.075773s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.073406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.075087s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`name`,`email`,`password`,`mail_port`,`reply_mail`,`host`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_email_config` WHERE  `admin_id` = 10000  AND `is_enabled` = 1 ORDER BY sort asc [ RunTime:0.072329s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:30:53+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：0.699227s][吞吐率：1.43req/s] [内存消耗：4,609.20kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '107',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => '林冬锋132',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfhgf',
+  'content' => 'ADASFADADADAASD',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098341s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.071459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.069361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.071638s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.067203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.069475s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:31:09+08:00 ] 192.168.1.241 192.168.1.241 POST /tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10
+[ info ] 192.168.1.241/tp5_demo/admin.php/Sys/sendEmail.ldf?page_num=10 [运行时间：0.783802s][吞吐率：1.28req/s] [内存消耗：4,609.20kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sys',
+    2 => 'sendEmail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'content-length' => '107',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page_num' => '10',
+  'id' => '1',
+  'name' => '林冬锋132',
+  'email' => '898303969@qq.com',
+  'cc' => '',
+  'title' => 'asdfhgf',
+  'content' => 'ADASFADADADAASD',
+)
+[ info ] [ RUN ] app\admin\controller\Sys->sendEmail[ D:\wamp64\www\tp5_demo\app\admin\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102921s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.072000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.070785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.070645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070249s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.070330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_email_config` [ RunTime:0.071296s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:31:55+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/Login/logout.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/Login/logout.ldf [运行时间：0.593720s][吞吐率：1.68req/s] [内存消耗：3,630.02kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->logout[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100507s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.072248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.077048s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070358s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.068849s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:31:55+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/l.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/l.ldf [运行时间：0.925027s][吞吐率：1.08req/s] [内存消耗：3,880.32kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/6202/237.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp64\www\tp5_demo/app/admin\view\login\login1.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111619s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.080095s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`partner_id`,`app_id`,`ali_public_key`,`rsa_private_key`,`limit_pay`,`sort`,`is_enabled`,`create_time`,`update_time` FROM `wj_alipay_config` WHERE  `is_enabled` = 1  AND `admin_id` IS NULL [ RunTime:0.074909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.085996s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`branch_no`,`merchant_no`,`mer_key`,`cmb_pub_key`,`op_pwd`,`limit_pay`,`return_url`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_cmb_config` WHERE  `admin_id` IS NULL  AND `is_enabled` = 1 [ RunTime:0.074388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.094273s ]
+[ sql ] [ SQL ] SELECT `id`,`admin_id`,`title`,`app_id`,`app_secret`,`wechat_type`,`merchant_id`,`key`,`cert_path`,`key_path`,`token`,`aes_key`,`is_enabled`,`sort`,`create_time`,`update_time` FROM `wj_wechat_info` WHERE  `admin_id` IS NULL  AND `is_enabled` = 1 [ RunTime:0.075639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.077610s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.081153s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:31:56+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/v.ldf
+[ info ] 192.168.1.241/tp5_demo/admin.php/v.ldf [运行时间：0.547933s][吞吐率：1.83req/s] [内存消耗：3,575.66kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginVerify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginVerify[ D:\wamp64\www\tp5_demo\app\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103351s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.073006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.073942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.074573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.070989s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.069438s ]
+---------------------------------------------------------------
+[ 2017-09-12T23:31:57+08:00 ] 192.168.1.241 192.168.1.241 GET /tp5_demo/admin.php/geetest.ldf?t=1505230316389
+[ info ] 192.168.1.241/tp5_demo/admin.php/geetest.ldf?t=1505230316389 [运行时间：0.905724s][吞吐率：1.10req/s] [内存消耗：3,177.73kb] [文件加载：57]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] D:\wamp64\www\tp5_demo\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\geetest\\GeetestController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.241',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://192.168.1.241/tp5_demo/admin.php/l.ldf',
+  'cookie' => 'PHPSESSID=dea94df872a9f5063df245add6302813',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  't' => '1505230316389',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\geetest\GeetestController->index[ D:\wamp64\www\tp5_demo\vendor\yfcmf\geetest\src\GeetestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099024s ] mysql:dbname=yolailatop;host=121.40.199.238;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_alipay_config` [ RunTime:0.082257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_cmb_config` [ RunTime:0.071111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_wechat_info` [ RunTime:0.069964s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wj_background_menu` [ RunTime:0.069731s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`action_name`,`route_url` FROM `wj_background_menu` WHERE  `is_enabled` = 1 [ RunTime:0.070371s ]

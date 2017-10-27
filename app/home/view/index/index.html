@@ -1,0 +1,114 @@
+{extend name="public/base" /}
+{block name="content"}
+      <!-- Heading Row -->
+      <div class="row my-4">
+        <div class="col-lg-7">
+		    <div class="swiper-container" id="top_slide" style="width:100%;height:350px">
+		        <div class="swiper-wrapper">
+		            {volist name="top_slide" id="slide_info"}
+		            <!-- 动画 -->
+		            {if condition="$slide_info.is_animate eq 1"}
+		            <div class="swiper-slide rounded">
+		            <!-- 加载背景图 -->
+		            {notempty name="slide_info.url"}<a href="{$slide_info.url}">{/notempty}
+					<img class="img-fluid rounded" src="{$slide_info.img_url}" style="width:100%;" title='{$slide_info.title}'/>
+					{notempty name="slide_info.url"}</a>{/notempty}
+					{volist name="slide_info['animate_data']" id="animate_info"}
+					{notempty name="animate_info.url"}<a href="{$animate_info.url}">{/notempty}
+					<img class="img-fluid rounded ani" src="{$animate_info.animate_img_url}" {$animate_info.style} swiper-animate-effect="{$animate_info.effect|default='fadeInUp'}" swiper-animate-duration="{$animate_info.duration|default='0'}s" swiper-animate-delay="{$animate_info.delay|default='0'}s">
+					{notempty name="animate_info.url"}</a>{/notempty}
+					{/volist}
+					</div>
+					{else /}
+					<!-- 无动画 -->
+		            <div class="swiper-slide">
+		            {notempty name="slide_info.url"}<a href="{$slide_info.url}">{/notempty}
+		            <img class="img-fluid rounded ani" src="{$slide_info.img_url}" style="width:100%;" title='{$slide_info.title}'/>
+		            {notempty name="slide_info.url"}</a>{/notempty}
+		            </div>
+		            {/if}
+		            {/volist}		        		        	
+		        </div>
+			    <div class="swiper-pagination"></div>
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>		        
+		    </div>            
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-5">
+		    <h4 class="card-title">{$news_info.title}</h4>
+		    <h6 class="card-subtitle text-muted">{$news_info.sub_title}</h6> 
+          	<div class="row">
+	          	<div class="col-lg-8">
+	          	<p>{$news_info.summary|subtext=200}</p>
+	          	<button type="button" class="btn btn-primary btn-lg btn-block">了解详情》》</button>
+	          	</div>
+	          	<div class="col-lg-4"><img class="img-fluid rounded" alt="" src="{$news_info.cover_img|default=default_img()}"></div>          	
+          	</div>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+	  {notempty name="advert_slide"}	
+      <!-- Call to Action Well -->
+      <div class="row my-4 text-center">
+		<div class="col-xs-12">
+			<div class="swiper-container" id="advert_slide" style="width:100%;height:90px">
+				<div class="swiper-wrapper">
+					{volist name="advert_slide" id="advert_info"}
+				    <div class="swiper-slide"> 
+				      <img class="img-fluid rounded" alt="{$advert_info.title}" src="{$advert_info.img_url}" style="width:100%"> 	
+				    </div>
+				    {/volist}				    			    
+				</div>             
+			</div>
+		</div>
+      </div>
+	  {/notempty}	
+      <!-- Content Row block_slide-->
+      <div class="row my-4">
+        {volist name="block_list" id="block_info"}
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">{$block_info.title}</h2>
+              <p class="card-text">{$block_info.remark}</p>
+            </div>
+            <div class="card-footer">
+              <a href="{:url('home/News/newsInfo',['id'=>$block_info.id])}" class="btn btn-primary">进入···</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        {/volist}
+      </div>
+      <!-- /.row -->
+ 
+<!--       <div class="row my-4">
+      	<div class="col-xs-12">
+		    <div class="swiper-container" id="bottom_slide" style="width:100%;height:90px">
+		        <div class="swiper-wrapper">
+		        	{volist name="bottom_slide" id="bottom_info"}
+		            <div class="swiper-slide col-xs-2">
+						<img class="img-fluid rounded" alt="{$bottom_info.title}" src="{$bottom_info.img_url}"> 			            
+		            </div>
+					{/volist} 
+		        </div>
+		    </div>   	
+      	</div>
+      </div> -->
+            
+     <link rel="stylesheet" href="__PUBLIC_PC__/ace/components/Swiper-3.4.1/css/swiper.min.css" />
+     <link rel="stylesheet" href="__PUBLIC_PC__/ace/components/Swiper-3.4.1/css/animate.min.css" />
+     <script type="text/javascript">
+    	 $(function(){
+    	 	var scripts=[
+    	 		"__PUBLIC_PC__/ace/components/Swiper-3.4.1/js/swiper.min.js",
+    	 		"__PUBLIC_PC__/ace/components/Swiper-3.4.1/js/swiper.animate1.0.2.min.js",
+    	 		"__PUBLIC_PC__/home/js/index/index.js"
+    	 	];
+    	 	$.addScript(scripts);
+    	 })
+	</script>
+{/block}      

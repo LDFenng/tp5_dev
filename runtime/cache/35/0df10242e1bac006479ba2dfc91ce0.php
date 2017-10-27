@@ -1,0 +1,4 @@
+<?php
+//000000014400
+ exit();?>
+a:21:{s:2:"id";i:1;s:8:"admin_id";i:10000;s:4:"name";s:15:"LDF测试网站";s:4:"host";s:0:"";s:4:"logo";s:95:"http://www.yolaila.top/demo/data/upload/10000/thumb_img/20170902/150433584294459aa57e2e6630.jpg";s:3:"icp";s:0:"";s:5:"count";s:0:"";s:9:"copyright";s:0:"";s:12:"company_name";s:3:"LDF";s:15:"company_address";s:0:"";s:7:"map_lat";s:0:"";s:7:"map_lng";s:0:"";s:3:"tel";s:0:"";s:5:"email";s:0:"";s:2:"qq";s:0:"";s:12:"wechat_qcode";s:0:"";s:5:"title";s:12:"日志管理";s:12:"seo_keywords";s:124:"日志管理,日志管理,日志管理,日志,日志管理，日志管理，日志管理日志管理，日志管理，管理";s:15:"seo_description";s:192:"日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理日志管理";s:11:"create_time";i:1499610228;s:11:"update_time";i:1502072425;}
