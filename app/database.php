@@ -13,13 +13,13 @@ return [
     // 数据库类型
     'type'           => 'mysql',
     // 服务器地址
-    'hostname'       => '121.40.199.238',
+    'hostname'       => 'localhost',
     // 数据库名
-    'database'       => 'yolailatop',
+    'database'       => 'tp5_demo',
     // 用户名
-    'username'       => 'yolailatop',
+    'username'       => 'root',
     // 密码
-    'password'       => 'yolailatop',
+    'password'       => 'root',
 
   
 //     // 服务器地址
