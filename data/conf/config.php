@@ -12,7 +12,7 @@ return array (
     ),
     'size' => 2097152,
     'save_path' => 'data/upload/{sid}/img/{yyyy}{mm}{dd}/{time}{rand:6}',
-    'thumb_path'=> 'data/upload/{sid}/thumb_img/', 
+    'thumb_path' => 'data/upload/{sid}/thumb_img/',
     'get_path' => 'data/upload/{sid}/img/',
     'compress_enable' => true,
   ),
@@ -42,17 +42,16 @@ return array (
     'save_path' => 'data/upload/{sid}/video/{yyyy}{mm}{dd}/{time}{rand:6}',
     'get_path' => 'data/upload/{sid}/video/',
   ),
-  'audio_config' =>(
-     array(
-         'type' =>
-         array(
-             1=>'.mp3',
-             2=>'.amr',
-        ),
-         'size' => 31457280,
-         'save_path' => 'data/upload/{sid}/audio/{yyyy}{mm}{dd}/{time}{rand:6}',
-         'get_path' => 'data/upload/{sid}/audio/',
-     ) 
+  'audio_config' => 
+  array (
+    'type' => 
+    array (
+      1 => '.mp3',
+      2 => '.amr',
+    ),
+    'size' => 31457280,
+    'save_path' => 'data/upload/{sid}/audio/{yyyy}{mm}{dd}/{time}{rand:6}',
+    'get_path' => 'data/upload/{sid}/audio/',
   ),
   'file_config' => 
   array (
@@ -125,13 +124,13 @@ return array (
     'captcha_id' => '1b0f34dcd079b492ec89799d7b3a4dfd',
     'private_key' => 'c18ed640683d091aa49c1f8a5a85a3cd',
   ),
-  'is_verify' => true,
+  'is_verify' => false,
   'verify' => 
   array (
     'fontSize' => '25',
     'useZh' => false,
     'expire' => '60',
-    'useNoise' =>true,
+    'useNoise' => true,
     'imageH' => 42,
     'imageW' => 250,
     'length' => '3',
@@ -179,28 +178,32 @@ return array (
   ),
   'pc_img_width' => 1024,
   'pc_img_quality' => 7,
-  'water_config'=>array(
-      'is_water'=>true,
-      'img_water'=>array(
-          'is_img'=>false,
-          'img_locate'=>1,
-          'alpha'=>100,
-          'water_img_src'=>''
-      ),
-      'text_water'=>array(
-          'is_text'=>true,
-          'text_locate'=>1,
-          'text'=>'LDF',
-          'size'=>35,
-          'color'=>'#000000',
-          'angle'=>0,
-          'font'=>ROOT_PATH . 'public' . DS . 'pc-ui/font/1.ttf'
-      )     
+  'water_config' => 
+  array (
+    'is_water' => true,
+    'img_water' => 
+    array (
+      'is_img' => false,
+      'img_locate' => 1,
+      'alpha' => 100,
+      'water_img_src' => '',
+    ),
+    'text_water' => 
+    array (
+      'is_text' => true,
+      'text_locate' => 1,
+      'text' => 'LDF',
+      'size' => 35,
+      'color' => '#000000',
+      'angle' => 0,
+      'font' => 'G:\\wamp64\\PHPTutorial\\WWW\\tp5_dev\\public\\pc-ui/font/1.ttf',
+    ),
   ),
-  'thumb_config'=>array(
-      'is_thumb'=>true,
-      'max_width'=>150,
-      'max_height'=>150,
-      'thumb_type'=>2
-  )  
+  'thumb_config' => 
+  array (
+    'is_thumb' => true,
+    'max_width' => 150,
+    'max_height' => 150,
+    'thumb_type' => 2,
+  ),
 );
